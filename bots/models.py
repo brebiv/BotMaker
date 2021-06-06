@@ -22,7 +22,8 @@ class Bot(models.Model):
 
     id = models.AutoField(primary_key=True, help_text="Database ID")
     tid = models.IntegerField(null=False, unique=True, editable=False, help_text="Telegram API ID")
-    token = models.CharField(max_length=46, unique=True, null=False, blank=False, editable=False, help_text="Telegram API Token")
+    # Change editable to False for token in prod
+    token = models.CharField(max_length=46, unique=True, null=False, blank=False, editable=True, help_text="Telegram API Token")
     username = models.CharField(max_length=64, unique=False, null=False, editable=False)
     owner = models.ForeignKey(CustomUser, on_delete=models.DO_NOTHING)
     created_at = models.DateTimeField(auto_now_add=True, editable=False)
