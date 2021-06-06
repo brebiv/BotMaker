@@ -3,11 +3,8 @@ from .models import Bot, Command, Message, InlineKeyboard, InlineKeyboardButton,
 
 
 admin.site.register(Bot)
-# admin.site.register(ResponseType)
 admin.site.register(Command)
 admin.site.register(Message)
 admin.site.register(InlineKeyboard)
 admin.site.register(InlineKeyboardButton)
-# admin.site.register(DataSourceType)
-# admin.site.register(DataSource)
 admin.site.register(CallbackHandler)
