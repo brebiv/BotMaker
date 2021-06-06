@@ -1,0 +1,12 @@
+#bot-status-card svg {
+    width: 32px;
+}
+
+.bot-status-row {
+    display: flex;
+    flex-direction: row;
+}
+
+.bot-status-row span {
+    margin-left: 1rem;
+}

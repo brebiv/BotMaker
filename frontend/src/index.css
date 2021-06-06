@@ -1,0 +1,18 @@
+:root {
+    font-size: 16px;
+    font-family: monospace;
+}
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+p, h1 {
+    margin: 0;
+    padding: 0;
+}
+
+* {
+    box-sizing: inherit;
+}

@@ -1,0 +1,9 @@
+# Virtual environment
+venv
+
+# Python cache
+*.pyc
+__pycache__
+
+# Memory profiler data
+mprofile_*.dat

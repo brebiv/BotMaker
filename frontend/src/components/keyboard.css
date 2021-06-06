@@ -1,0 +1,116 @@
+body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+    /* display: flex; */
+}
+
+* {
+    box-sizing: inherit;
+}
+
+p {
+    margin: 0;
+}
+
+.keyboard-wrapper {
+    display: flex;
+    width: 100%;
+    /* height: 50vh; */
+    /*margin: 140px auto;*/
+    flex-direction: column;
+    /*background-color: rgb(151, 151, 151);*/
+}
+
+.keyboard-selector {
+    display: grid;
+    column-gap: 3px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+}
+
+.keyboard-button {
+    display: flex;
+     align-items: center;
+    width: 100%;
+    height: 40px;
+    margin-right: 5px;
+    border: 2px solid #1678c2;
+    border-radius: 5px;
+    color: #FFFFFF;
+    background-color: #44a8ff;
+    transition: background-color .1s ease,color .1s ease;
+    cursor: pointer;
+}
+
+.keyboard-button svg {
+    fill: #cce2ff;
+}
+
+.keyboard-button:hover {
+    background-color: #1678c2;
+}
+
+.keyboard-button > *{
+    margin: auto;
+}
+
+.button-text {
+    font-weight: bold;
+}
+
+
+
+
+.popup{
+    width:100%;
+    min-height:100%;
+    background-color: rgba(0,0,0,0.5);
+    overflow:hidden;
+    position:fixed;
+    top:0px;
+    z-index: 1;
+}
+.popup-content{
+    margin:40px auto 0px auto;
+    width: 50vw;
+    /* height: 40px; */
+    padding:10px;
+    background-color: #c5c5c5;
+    border-radius:5px;
+    box-shadow: 0px 0px 10px #000;
+}
+
+.popup-content input{
+    margin: 2px;
+    width: 85%;
+    height: 100%;
+    outline: none;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+    font-size: 17px;
+    padding-left: 15px;
+    transition: all 0.3s ease;
+    z-index: 2;
+}
+.popup-content input:focus{
+    border-color: #8E49E8;
+}
+
+.popup-content button {
+    padding: 6px 10px;
+    border-radius: 3px;
+    border: none;
+    outline: none;
+    color: #fff;
+    font-weight: 400;
+    font-size: 16px;
+    margin-left: 5px;
+    background: #8E49E8;
+    cursor: pointer;
+    user-select: none;
+    opacity: 0.6;
+    transition: all 0.3s ease;
+}

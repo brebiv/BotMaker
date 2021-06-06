@@ -1,0 +1,36 @@
+main {
+    margin-left: 5rem;
+    /*height: 100vh;*/
+    min-height: 100vh;
+    /*max-height: 100vh;*/
+    padding: 2rem;
+    background: linear-gradient(to bottom, #6495ED, #9198e5);
+}
+
+.ok-ball {
+    display: block;
+    width: 1.7rem;
+    height: 1.7rem;
+    background-color: #21ba45;
+    border-radius: 20px;
+}
+
+.red-ball {
+    display: block;
+    width: 1.7rem;
+    height: 1.7rem;
+    background-color: #db2828;
+    border-radius: 20px;
+}
+
+.color-red {
+    color: #db2828;;
+}
+
+.color-green {
+    color: #21ba45;
+}
+
+.no-padding {
+    padding: 0 !important;
+}

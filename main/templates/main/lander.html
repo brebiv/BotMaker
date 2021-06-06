@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <title>BotMaker</title>
+    <script src="https://cdn.jsdelivr.net/npm/js-cookie@rc/dist/js.cookie.min.js"></script>
+    <script src="{% static 'main/axios.min.js' %}"></script>
+</head>
+<body>
+    <form method="POST" id="login-form">
+        <input type="email" name="email" placeholder="email" id="email-input">
+        <input type="password" name="password" placeholder="password" id="password-input">
+        <input type="submit">
+    </form>
+    <a href="{% url 'Dashboard' %}">Dashboard</a>
+<script>
+    //let login_form = document.getElementById('login-form');
+
+    //login_form.onsubmit(event => {
+    ///    event.preventDefault();
+    //    email = document.getElementById('email-input').value;
+    ////    password = document.getElementById('password-input').value;
+    ///    console.log(email, password)
+    //});
+
+    const csrftoken = Cookies.get('csrftoken');
+    //<!-- axios.defaults.headers.common['X-CSRFToken'] = 'XMLHttpRequest'; -->
+    //<!-- window.axios.defaults.headers.common['X-CSRF-TOKEN'] = csrftoken; -->
+    //console.log(axios)
+    console.log(csrftoken)
+
+</script>
+</body>
+</html>
