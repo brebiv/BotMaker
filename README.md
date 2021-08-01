@@ -1,5 +1,11 @@
 # BotMaker
 
+## Web-interface preview
+
+![Dashboard page](https://i.imgur.com/Aew69Bs.png)
+![Builder page](https://i.imgur.com/ILDW7hQ.png)
+![Add command modal](https://i.imgur.com/wFbs4zw.png)
+
 ## Installation guide
 
 Clone repository
